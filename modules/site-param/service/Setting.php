@@ -25,6 +25,9 @@ class Setting {
                 $cache = [];
                 foreach($settings as $set){
                     switch($set->type){
+                    case 2:
+                        $set->value = new \DateTime($set->value);
+                        break;
                     case 3:
                         $set->value = (int)$set->value;
                         break;
