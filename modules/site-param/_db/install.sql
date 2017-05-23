@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS `site_param` (
     -- 6 url
     -- 7 email
     -- 8 color
+    
     `type` TINYINT DEFAULT 1,
     `group` VARCHAR(50),
     `value` TEXT,
